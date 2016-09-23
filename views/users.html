@@ -1,0 +1,41 @@
+{{!< layout/default}}
+
+{{#extend "css"}}
+	<!-- incluyo los css de users.html en el layout -->
+{{/extend}}
+	{{> navbar}}
+
+	<!--TODO-->
+	
+	<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>username</th>
+        <th>name</th>
+        <th>lastname</th>
+        <th>gender</th>
+        <th>mail</th>
+        <th>phone</th>
+        <th>rut</th>
+        <th>state</th>
+        <th>birthdate</th>
+        <th>role</th>
+      </tr>
+    </thead>
+    <tbody id="users">
+      <!--
+      <tr>
+     	<td></td>
+      </tr>
+      -->
+    </tbody>
+  </table>
+
+
+	<!--TODO-->
+
+{{#extend "js"}}
+	<!-- incluyo los js de users.html en el layout -->
+	<script src="/public/js/users/users.js"></script>
+{{/extend}}

@@ -1,0 +1,19 @@
+{{!< layout/default}}
+
+{{#extend "css"}}
+	<!-- incluyo los css de index.html en el layout -->
+{{/extend}}
+	{{> navbar}}
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">Panel title</h3>
+		</div>
+		<div class="panel-body">
+			<button id="button" type="button" class="btn btn-success">API USERS</button>
+		</div>
+	</div>	
+
+{{#extend "js"}}
+	<!-- incluyo los js de index.html en el layout -->
+	<script src="/public/js/index/index.js"></script>
+{{/extend}}

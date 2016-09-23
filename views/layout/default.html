@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{{! Document Layout}}
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="HandheldFriendly" content="true" />
+	<title>CLASE</title>
+
+	<!-- Default Page CSS -->
+	<link rel="stylesheet" href="/public/css/default/default.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/public/js/bootstrap/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/public/css/font-awesome/css/font-awesome.min.css">
+	{{#block "css"}}
+	{{/block}}
+</head>
+<body>
+	<div class="container">
+		{{{content}}}
+	</div>
+	
+	<!-- JQUERY -->
+	<script src="/public/js/jquery.min.js"></script>
+	<!-- BOOTSTRAP JS -->
+	<script src="/public/js/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Default JS -->
+	<script src="/public/js/default/default.js"></script>
+	{{#block "js"}}
+	{{/block}}
+</body>
+</html>
