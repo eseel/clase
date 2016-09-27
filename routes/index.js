@@ -1,4 +1,5 @@
 import APIUsers from './api/users';
+import APILessons from './api/lessons';
 
 const Index = {
     method: ['GET', 'POST'],
@@ -20,6 +21,16 @@ const Users = {
     }
 };
 
+const Lessons = {
+    method: ['GET', 'POST'],
+    path: '/lessons',
+    config: {
+        handler: function(request, reply) {
+            return reply.view('lessons');
+        }
+    }
+};
+
 const Public = {
     method: "GET",
     path: "/public/{path*}",
@@ -35,6 +46,8 @@ const Routes = [].concat(
     Public,
     Index,
     Users,
-    APIUsers
+    APIUsers,
+    Lessons,
+    APILessons
 );
 export default Routes;

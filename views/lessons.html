@@ -1,0 +1,33 @@
+{{!< layout/default}}
+
+{{#extend "css"}}
+	<!-- incluyo los css de lessons.html en el layout -->
+{{/extend}}
+	{{> navbar}}
+
+	<!--TODO-->
+	
+	<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>name</th>
+        <th>descripcion</th>
+      </tr>
+    </thead>
+    <tbody id="lessons">
+      <!--
+      <tr>
+     	<td></td>
+      </tr>
+      -->
+    </tbody>
+  </table>
+
+
+	<!--TODO-->
+
+{{#extend "js"}}
+	<!-- incluyo los js de lessons.html en el layout -->
+	<script src="/public/js/lessons/lessons.js"></script>
+{{/extend}}
